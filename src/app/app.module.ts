@@ -18,6 +18,7 @@ import { NestedNodeComponent } from './nested-node/nested-node.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import {AccordionModule} from 'primeng/accordion';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 
 
@@ -30,10 +31,9 @@ import {AccordionModule} from 'primeng/accordion';
     NestedNodeComponent,
     LoginComponent,
     RegisterComponent,
-   
-    
-    
-    
+
+
+
   ],
   imports: [
     BrowserModule,
@@ -47,11 +47,12 @@ import {AccordionModule} from 'primeng/accordion';
     MatMenuModule,
     MatSnackBarModule,
     MatButtonModule,
-    AccordionModule
-    
+    AccordionModule,
+    MatGridListModule
+
   ],
   providers: [
-   
+
   ],
   bootstrap: [AppComponent]
 })

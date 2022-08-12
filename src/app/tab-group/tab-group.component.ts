@@ -15,5 +15,5 @@ export class TabGroupComponent {
     this.background = this.background ? undefined : 'primary';
   }
 
-  
+
 }

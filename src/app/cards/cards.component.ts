@@ -16,7 +16,8 @@ export class CardsComponent implements OnInit {
     { id: 1, name: "Çanta", price: 2699, categoryId: 1, description: "Moschino Çanta", image: "assets/images/çanta.jfif" },
     { id: 2, name: "Ayakkabı", price: 18499, categoryId: 2, description: "Giuseppe Zanotti Sneakers",image: "assets/images/ayakkabı.jfif" },
     { id: 3, name: "Şapka", price: 9999, categoryId: 3, description: "Prada Siyah Logolu Şapka",image: "assets/images/sapka.jfif" },
-    { id: 4, name: "Sweatshirt", price: 29499, categoryId: 4, description: "Dolce&Gabbana Sweatshirt",image: "assets/images/sweatshirt.jfif" }
+    { id: 4, name: "Sweatshirt", price: 29499, categoryId: 4, description: "Dolce&Gabbana Sweatshirt",image: "assets/images/sweatshirt.jfif" },
+    {id: 5, name: "Mont", price: 24999, categoryId: 5, description:"Tom Ford Mont", image:"assets/images/mont.jpeg"}
   ]
 
   ngOnInit(): void {
