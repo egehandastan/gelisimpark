@@ -18,6 +18,12 @@ import { NestedNodeComponent } from './nested-node/nested-node.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import {AccordionModule} from 'primeng/accordion';
+import { SearchBarComponent } from './search-bar/search-bar.component';
+import { ProductFilterPipe } from './search-bar/product-filter.pipe';
+import { Cards } from './cards/cards';
+import { FormsModule } from '@angular/forms';
+
+
 
 
 
@@ -30,10 +36,9 @@ import {AccordionModule} from 'primeng/accordion';
     NestedNodeComponent,
     LoginComponent,
     RegisterComponent,
-   
-    
-    
-    
+    SearchBarComponent,
+    ProductFilterPipe,
+
   ],
   imports: [
     BrowserModule,
@@ -47,11 +52,13 @@ import {AccordionModule} from 'primeng/accordion';
     MatMenuModule,
     MatSnackBarModule,
     MatButtonModule,
-    AccordionModule
+    AccordionModule,
+    FormsModule,
     
+
   ],
   providers: [
-   
+
   ],
   bootstrap: [AppComponent]
 })

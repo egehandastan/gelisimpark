@@ -12,6 +12,7 @@ export class CardsComponent implements OnInit {
 
   constructor(private alertifyService:AlertifyService) { }
   title = "Product List"
+  filterText=""
   products: Cards[] = [
     { id: 1, name: "Çanta", price: 2699, categoryId: 1, description: "Moschino Çanta", image: "assets/images/çanta.jfif" },
     { id: 2, name: "Ayakkabı", price: 18499, categoryId: 2, description: "Giuseppe Zanotti Sneakers",image: "assets/images/ayakkabı.jfif" },

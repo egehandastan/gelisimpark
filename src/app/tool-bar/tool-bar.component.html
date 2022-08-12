@@ -1,6 +1,6 @@
 <mat-toolbar>
 
-    <div class="col-md-10">
+    <div class="col-md-2">
         <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="">
             <mat-icon>more_vert</mat-icon>
         </button>
@@ -8,13 +8,21 @@
             <app-nested-node></app-nested-node>
         </mat-menu>
     </div>
+    <div class="col-md-8">
+      <app-search-bar></app-search-bar>
+    </div>
+    <div class="col-md-3" >
+      <form
+        (ngSubmit)="onLogin()">
+        <button type="submit" mat-raised-button color="accent">Giriş Yap</button>
+        <button type="submit" mat-stroked-button color="accent">Kayıt Ol</button>
+      </form>
 
-    <div class="col-md-3">
 
-        <button mat-raised-button color="accent">Giriş Yap</button>
 
-        &nbsp;
-        <button mat-stroked-button color="accent">Kayıt Ol</button>
+
+
 
     </div>
+
 </mat-toolbar>

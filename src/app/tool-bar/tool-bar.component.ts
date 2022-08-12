@@ -7,12 +7,19 @@ import { Router } from '@angular/router';
   styleUrls: ['./tool-bar.component.css']
 })
 export class ToolBarComponent implements OnInit {
-  
-  constructor(){}
+
+  constructor(public router: Router){}
 
   ngOnInit(): void {
-  
+
+
 
   }
-  
+  onLogin(): void{
+      this.router.navigate(['login'])
+
+  }
+  onRegister(): void{
+       this.router.navigate(['register'])
+  }
 }
