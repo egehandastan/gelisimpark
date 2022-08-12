@@ -14,15 +14,17 @@
   <div class="col-md-3" >
     <form
       (ngSubmit)="onLogin()">
-      <button type="submit" mat-raised-button color="accent">Giriş Yap</button>
-      <button type="submit" mat-stroked-button color="accent">Kayıt Ol</button>
+      <div class="row">
+        <div class="col-md-3" >
+
+          <button type="submit" mat-raised-button color="accent">Giriş Yap</button>
+        </div>
+        <div class="col-md-3" >
+
+          <button type="submit" mat-stroked-button color="accent">Kayıt Ol</button>
+        </div>
+      </div>
     </form>
-
-
-
-
-
-
   </div>
 
 </mat-toolbar>

@@ -1,12 +1,26 @@
-<div *ngFor="let product of products |productFilter:filterText" class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" [src]="product.image" alt="...">
-    <div class="card-body">
-      <h1 class="card-title">{{product.name}}</h1>
-      <h3 class="card-text">
-        {{product.description}}
-      </h3>
-      <h3 class="card-price">{{product.price|currency:'₺'}}</h3>
-      <a (click)="addToCart(product)" class="btn btn-primary">Sepete Ekle</a>
-    </div>
-
+<div *ngFor="let product of products" class="card" style="width: 18rem" >
+  <img src="..." class="card-img-top" [src]="product.image" alt="...">
+  <div class="card-body">
   </div>
+
+  <div class="row">
+    <div class="col-md-1"></div>
+    <div class="col-md-9">
+      <div>
+        <h1 class="card-title">{{product.name}}</h1>
+        <h3 class="card-text">
+          {{product.description}}
+        </h3>
+        <h3 class="card-price">{{product.price|currency:'₺'}}</h3>
+        <button (click)="addToCart(product)" mat-raised-button color="accent">Sepete Ekle</button>
+      </div>
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+  <div class="row">
+    &nbsp;
+  </div>
+</div>
+
+
+
