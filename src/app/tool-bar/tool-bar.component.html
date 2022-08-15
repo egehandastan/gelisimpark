@@ -1,6 +1,5 @@
 <mat-toolbar>
-
-  <div class="col-md-2">
+  <div class = "col-md-3">
     <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="">
       <mat-icon>more_vert</mat-icon>
     </button>
@@ -8,14 +7,14 @@
       <app-nested-node></app-nested-node>
     </mat-menu>
   </div>
-  <div class="col-md-8">
+  <div class = "col-md-6">
     <app-search-bar></app-search-bar>
   </div>
-  <div class="col-md-3" >
-    <form
-      (ngSubmit)="onLogin()">
+  <div class = "col-md-1"></div>
+  <div class = "col-md-5">
+    <form (ngSubmit)="onLogin()">
       <div class="row">
-        <div class="col-md-3" >
+        <div class="col-md-2" >
 
           <button type="submit" mat-raised-button color="accent">Giriş Yap</button>
         </div>
@@ -26,8 +25,4 @@
       </div>
     </form>
   </div>
-
 </mat-toolbar>
-
-
-
