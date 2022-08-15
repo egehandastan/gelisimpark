@@ -1,3 +1,8 @@
 .example-spacer {
     flex: 1 1 auto;
   }
+
+  .tab-content-center {
+    display: flex;
+    justify-content: center;
+  }
