@@ -22,7 +22,7 @@ import { SearchBarComponent } from './search-bar/search-bar.component';
 import { ProductFilterPipe } from './search-bar/product-filter.pipe';
 import { Cards } from './cards/cards';
 import { FormsModule } from '@angular/forms';
-
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 
@@ -54,8 +54,7 @@ import { FormsModule } from '@angular/forms';
     MatButtonModule,
     AccordionModule,
     FormsModule,
-    
-
+    FlexLayoutModule,
   ],
   providers: [
 

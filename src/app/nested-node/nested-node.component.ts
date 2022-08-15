@@ -26,7 +26,7 @@ const CATEGORY_DATA: CategoryNodes[] = [
         children:[{name: 'Şapka'},{name:'Bileklik'}],
       }
     ],
-    
+
   },
   {
     name: 'Erkek',
@@ -48,9 +48,7 @@ const CATEGORY_DATA: CategoryNodes[] = [
         children:[{name: 'Şapka'},{name:'Bileklik'}],
       }
     ],
-  },
-  {name: 'Sana Özel'},
-  {name: 'Favoriler'}
+  }
 ]
 
 
@@ -64,7 +62,7 @@ export class NestedNodeComponent implements OnInit {
   treeControl = new NestedTreeControl<CategoryNodes>(node => node.children);
   dataSource = new MatTreeNestedDataSource<CategoryNodes>();
 
-  constructor() { 
+  constructor() {
     this.dataSource.data = CATEGORY_DATA;
   }
 
