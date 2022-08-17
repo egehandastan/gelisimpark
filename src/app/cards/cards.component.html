@@ -11,8 +11,12 @@
           <h3 class="card-text">
             {{product.description}}
           </h3>
+          <mat-icon matBadge={{counter}} matBadgeColor="warn">shopping_cart</mat-icon>
           <h3 class="card-price">{{product.price|currency:'₺'}}</h3>
           <button (click)="addToCart(product)" mat-raised-button color="accent">Sepete Ekle</button>
+          &nbsp;
+          <button (click)="removeFromCart(product)" mat-raised-button color="accent">Sepetten Çıkart</button>
+
         </div>
       </div>
       <div class="col-md-3"></div>
@@ -22,4 +26,3 @@
     </div>
   </div>
 </div>
-

@@ -19,6 +19,7 @@ export class ToolBarComponent implements OnInit {
       this.router.navigate(['login'])
 
   }
+
   onRegister(): void{
        this.router.navigate(['register'])
   }
