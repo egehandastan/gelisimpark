@@ -1,3 +1,32 @@
+<mat-toolbar>
+  <div class = "col">
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="" >
+      <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <app-nested-node></app-nested-node>
+    </mat-menu>
+  </div>
+  <div class = "col-md-3">
+    <img class="img-responsive" src="assets/images/icon.png">
+  </div>
+  <div class = "col-md-12">
+    <form (ngSubmit)="onLogOut()">
+      <div class="row">
+
+        <div class = "col-md-6">
+          <app-search-bar></app-search-bar>
+        </div>
+        <div class = "col-md-2">
+        </div>
+        <div class="col-md-1" >
+          <button type="submit" mat-raised-button color="accent">Çıkış Yap</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</mat-toolbar>
+
 <mat-tab-group mat-align-tabs="center" >
 
   <mat-tab label="En Beğenilenler" >
