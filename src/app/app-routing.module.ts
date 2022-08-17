@@ -11,6 +11,10 @@ const routes: Routes = [
  {path:'login',component:LoginComponent},
  {path:'',component:ToolBarComponent, pathMatch:'full'},
  {path:'register',component:RegisterComponent},
+ {path:'app-tab-group',component:TabGroupComponent},
+ {path:'app-tool-bar',component:ToolBarComponent},
+
+
 
 
 ];

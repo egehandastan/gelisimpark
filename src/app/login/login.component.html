@@ -6,23 +6,24 @@
             <div class="card-body p-4 p-sm-5">
               <h5 class="card-title text-center mb-5 fw-light fs-5">Giriş Yap</h5>
               <form>
-                <div class="form-floating mb-3">
-                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                  <label for="floatingInput">Email</label>
-                </div>
-                <div class="form-floating mb-3">
-                  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                  <label for="floatingPassword">Şifre</label>
-                </div>
-
-                <div class="form-check mb-3">
-                  <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
-                  <label class="form-check-label" for="rememberPasswordCheck">
-                    Şifremi Hatırla
-                  </label>
-                </div>
-                <div class="d-grid">
-                  <button class="btn btn-primary btn-login text-uppercase fw-bold" type="submit">Giriş Yap</button>
+                <div class = "form-floating mb-3 ">
+                  <div class = "form-floating mb-3 ">
+                    <input  class="input form-control tab-content-center" type = "text" id="floatingInput" name="email" [(ngModel)] = "email">
+                    <label for="floatingInput">Email</label>
+                  </div>
+                  <div class = "form-floating mb-3 ">
+                    <input type = "password" class="input form-control form-check mb-3 tab-content-center"  id="floatingPassword" name="password" [(ngModel)]="password">
+                    <label for="floatingPassword">Şifre</label>
+                  </div>
+                    <div class="form-check mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="rememberPasswordCheck">
+                      <label class="form-check-label" for="rememberPasswordCheck">
+                        Şifremi Hatırla
+                      </label>
+                    </div>
+                  <div class="input d-grid tab-content-center">
+                    <button color="accent" (click)="LoginUser()" type="submit" mat-raised-button color="accent">Giriş Yap</button>
+                  </div>
                 </div>
               </form>
             </div>
