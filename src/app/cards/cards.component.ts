@@ -13,6 +13,7 @@ export class CardsComponent implements OnInit {
   gridColumns =5;
   constructor(private alertifyService:AlertifyService) { }
   title = "Product List"
+  counter:number=0;
   filterText=""
   products: Cards[] = [
     { id: 1, name: "Çanta", price: 2699, categoryId: 1, description: "Moschino Çanta", image: "assets/images/çanta.jfif" },
@@ -39,7 +40,22 @@ export class CardsComponent implements OnInit {
   }
   addToCart(product: any){
     alertify.success("Sepete eklendi")
+   this.counter++;
+   return this.counter;
 
+  }
+  removeFromCart(product: any){
+
+
+  if(this.counter==0){
+  this.counter=0;
+  }
+  else{
+  this.counter--;
+   alertify.error("Sepetten Çıkarıldı")
+  }
+
+    return this.counter;
   }
 
 }

@@ -23,6 +23,8 @@ import { ProductFilterPipe } from './search-bar/product-filter.pipe';
 import { Cards } from './cards/cards';
 import { FormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatBadgeModule } from '@angular/material/badge'
 
 
 
@@ -54,6 +56,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     AccordionModule,
     FormsModule,
     FlexLayoutModule,
+    ReactiveFormsModule,
+    MatBadgeModule
   ],
   providers: [
 

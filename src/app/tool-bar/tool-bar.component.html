@@ -11,20 +11,24 @@
     <img class="img-responsive" src="assets/images/icon.png">
   </div>
   <div class = "col-md-12">
-    <form (ngSubmit)="onLogin()">
+
       <div class="row">
 
-        <div class = "col-md-7">
+        <div class = "col-md-7"></div>
+          <div class="col-md-1" >
+            <form (ngSubmit)="onLogin()">
+            <button type="submit" mat-raised-button color="accent">Giriş Yap</button>
+          </form>
         </div>
         <div class="col-md-1" >
-          <button type="submit" mat-raised-button color="accent">Giriş Yap</button>
-        </div>
-        <div class="col-md-1" >
-
-          <button type="submit" mat-stroked-button color="accent">Kayıt Ol</button>
+          <form (ngSubmit) = "onRegister()">
+            <button type="submit" mat-stroked-button color="accent">Kayıt Ol</button>
+          </form>
         </div>
       </div>
-    </form>
+
+
+
   </div>
 </mat-toolbar>
 <img class="img-responsive" src="assets/images/kapak.png">

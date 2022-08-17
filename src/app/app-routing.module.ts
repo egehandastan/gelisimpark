@@ -13,6 +13,9 @@ const routes: Routes = [
  {path:'register',component:RegisterComponent},
  {path:'app-tab-group',component:TabGroupComponent},
  {path:'app-tool-bar',component:ToolBarComponent},
+ {path:'register',component:RegisterComponent},
+
+
 
 
 
