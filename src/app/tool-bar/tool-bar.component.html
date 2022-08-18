@@ -1,12 +1,4 @@
 <mat-toolbar>
-  <div class = "col">
-    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="" >
-      <mat-icon>more_vert</mat-icon>
-    </button>
-    <mat-menu #menu="matMenu">
-      <app-nested-node></app-nested-node>
-    </mat-menu>
-  </div>
   <div class = "col-md-3">
     <img class="img-responsive" src="assets/images/icon.png">
   </div>
@@ -17,12 +9,18 @@
         <div class = "col-md-7"></div>
           <div class="col-md-1" >
             <form (ngSubmit)="onLogin()">
-            <button type="submit" mat-raised-button color="accent">Giriş Yap</button>
+            <button type="submit" class="toolbar" mat-raised-button color="accent">
+              <i class="fa fa-user"></i>
+              Giriş Yap
+            </button>
           </form>
         </div>
         <div class="col-md-1" >
           <form (ngSubmit) = "onRegister()">
-            <button type="submit" mat-stroked-button color="accent">Kayıt Ol</button>
+            <button type="submit" class="toolbar" mat-stroked-button color="accent">
+              <i class="fa fa-user-plus"></i>
+              Kayıt Ol
+            </button>
           </form>
         </div>
       </div>

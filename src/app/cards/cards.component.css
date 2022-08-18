@@ -5,3 +5,16 @@
 .content > mat-card {
     width: 200px;
 }
+
+
+  .tab-content-center {
+    display: flex;
+    justify-content: center;
+  }
+
+.button{
+    font-size: 16px;
+    cursor: pointer;
+    margin: 4px 2px;
+    padding: 3px 15px;
+  }
