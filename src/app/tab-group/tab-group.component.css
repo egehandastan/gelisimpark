@@ -9,3 +9,11 @@
 ::ng-deep .mat-tab-label .mat-tab-label-content {
     font-size: large;
 }
+
+  .toolbar{
+    width: 100 px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 4px 2px;
+    padding: 2px 17px;
+  }
